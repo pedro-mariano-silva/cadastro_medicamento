@@ -16,11 +16,45 @@
     </header>
 
     <section id="baner">
-        <img src="./img/logo.svg">
+        <img id="logo"src="./img/logo.svg">
         <h1>Cadastro de Medicamentos</h1>
         
     </section>
     <p id="paragrafo">Farmácia da Gente</p>
+
+    <section id="formulario">
+        <div id="form">
+            <form onsubmit="addMed()">
+            <label for="medName">Nome do Medicamento</label>
+            <input autocomplete="off" type="text" required id="fname" name="medName">
+            <label for="medQtd">Quantidade Disponível</label>
+                <input autocomplete="off" type="text" required id="fqtd" name="medQtd">
+                <label for="metClass">Classe de Medicamento</label>
+                <input style="margin-bottom: 2rem;" autocomplete="off" type="text" required id="fclass" name="metClass">
+                <button class="submit-button" type="submit"> Cadastrar </button>
+            </form>
+           </div>
+
+           <div>
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>MEDICAMENTO</th>
+                    <th>QUANTIDADE</th>
+                    <th>CLASSE DE MEDICAMENTO</th>
+                    <th id="remover">REMOVER</th>
+                </tr>
+
+
+
+
+
+            </table>
+           </div>  
+
+    </section>
+
+<script src="dado.js"></script>
     
 </body>
 </html>
